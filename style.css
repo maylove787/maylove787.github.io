@@ -18,7 +18,7 @@ hr {
 	}
 	
 #tabs {
-	float:left;
+	float:center;
 	width:100%;
 	font-size:93%;
 	border-bottom:1px solid #F45551;
@@ -38,7 +38,7 @@ hr {
 	}
 
 #tabs a {
-	float:left;
+	float:center;
 	background:url("tableft.gif") no-repeat left top;
 	margin:0;
 	padding:0 0 0 4px;
@@ -46,7 +46,7 @@ hr {
 	}
 
 #tabs a span {
-	float:left;
+	float:center;
 	display:block;
 	background:url("tabright.gif") no-repeat right top;
 	padding:5px 15px 4px 6px;
