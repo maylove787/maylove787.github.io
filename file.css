@@ -1,65 +1,112 @@
 .nav a {
-  color: #5a5a5a;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 14px 10px;
-  text-transform: uppercase;
+color: #5a5a5a;
+font-size: 11px;
+font-weight: bold;
+padding: 14px 10px;
+text-transform: uppercase;
 }
-
 .nav li {
-  display: inline;
+display: inline;
 }
-
 .jumbotron {
-  background-image:url('http://goo.gl/04j7Nn');
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
+background-image:url('http://www.technobuffalo.com/wp-content/uploads/2015/01/mexico.jpg');
+height: 500px;
+background-repeat: no-repeat;
+background-size: cover;
 }
-
 .jumbotron .container {
-  position: relative;
-  top:100px;
+position: relative;
+top:100px;
 }
-
 .jumbotron h1 {
-  color: #fff;
-  font-size: 48px;  
-  font-family: 'Shift', sans-serif;
-  font-weight: bold;
+color: #fff;
+font-size: 48px;
+font-family: 'Shift', sans-serif;
+font-weight: bold;
 }
-
 .jumbotron p {
-  font-size: 20px;
-  color: #fff;
+font-size: 20px;
+color: #fff;
 }
-
 .learn-more {
-  background-color: #f7f7f7;
+background-color: #f7f7f7;
 }
-
 .learn-more h3 {
-  font-family: 'Shift', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
+font-family: 'Shift', sans-serif;
+font-size: 18px;
+font-weight: bold;
 }
-
 .learn-more a {
-  color: #00b0ff;
+color: #00b0ff;
 }
-
 .neighborhood-guides{
-    background-color: #efefef;
-    border-bottom: 1px solid #dbdbdb;
+background-color: #efefef;
+border-bottom: 1px solid #dbdbdb;
 }
-
 .neighborhood-guides h2{
-    color: #393c3d;
-    font-size: 24px;
-
+color: #393c3d;
+font-size: 24px;
 }
-
 .neighborhood-guides p{
-     font-size: 15px;
-    margin-bottom: 13px;    
+font-size: 15px;
+margin-bottom: 13px;
+}
+.footer-distributed{
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: normal 16px sans-serif;
+padding: 45px 50px;
+margin-top: 80px;
+}
+.footer-distributed .footer-left p{
+color:  #8f9296;
+font-size: 14px;
+margin: 0;
+}
+/* Footer links */
+.footer-distributed p.footer-links{
+font-size:18px;
+font-weight: bold;
+color:  #ffffff;
+margin: 0 0 10px;
+padding: 0;
+}
+.footer-distributed p.footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+}
+.footer-distributed .footer-right{
+float: right;
+margin-top: 6px;
+max-width: 180px;
+}
+.footer-distributed .footer-right a{
+display: inline-block;
+width: 35px;
+height: 35px;
+background-color:  #33383b;
+border-radius: 2px;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+margin-left: 3px;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 600px) {
+.footer-distributed .footer-left,
+.footer-distributed .footer-right{
+text-align: center;
+}
+.footer-distributed .footer-right{
+float: none;
+margin: 0 auto 20px;
+}
+.footer-distributed .footer-left p.footer-links{
+line-height: 1.8;
 }
