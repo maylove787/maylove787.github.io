@@ -1,8 +1,6 @@
 <!doctype html>
 <html>
-<head></head>
-<body>
-<script>
+<head><script>
 function getZodiacSign(day, month) {
 
   var zodiacSigns = {
@@ -46,6 +44,8 @@ function getZodiacSign(day, month) {
     return zodiacSigns.sagittarius;
   }
 }
-</script>
+</script></head>
+<body>
+
 </body>
 </html>
