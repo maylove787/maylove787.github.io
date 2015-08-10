@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head><script>
-
-  var zodiacSigns = prompt(
+var birthyear= prompt(whens your birthday?)
+  var zodiacSigns = {
     'capricorn':'Козерог',
     'aquarius':'Водолей',
     'pisces':'Рыбы',
@@ -15,7 +15,7 @@
     'libra':'Весы',
     'scorpio':'Скорпион',
     'sagittarius':'Стрелец'
-  )
+  }
 
   if((month == 1 && day <= 20) || (month == 12 && day >=22)) {
     return zodiacSigns.capricorn;
