@@ -8,13 +8,28 @@
 </style>
 <body>
 <div id="mydiv" style="width:200px;background:white" onmouseover="this.style.background='gray';" onmouseout="this.style.background='white';">
-    Jack and Jill went up the hill 
+    <h1>Jack and Jill went up the hill 
     To fetch a pail of water. 
     Jack fell down and broke his crown, 
-    And Jill came tumbling after. 
+    And Jill came tumbling after. </h1>
     </div>
 <script>
+$(".h1").click(function () {
 
+    $h1 = $(this);
+    //getting the next element
+    $content = $h1.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $content.slideToggle(500, function () {
+        //execute this after slideToggle is done
+        //change text of header based on visibility of content div
+        $h1.text(function () {
+            //change text based on condition
+            return $content.is(":visible") ? "Collapse" : "Expand";
+        });
+    });
+
+});
 </script>
 </body>
 </html>
