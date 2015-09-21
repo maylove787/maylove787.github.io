@@ -14,21 +14,16 @@
     And Jill came tumbling after. </h1>
     </div>
 <script>
-$(".h1").click(function () {
+$(".div").hover(function() {
+    $(this).closest(".div").css("z-index", 1);
 
-    $h1 = $(this);
-    //getting the next element
-    $content = $h1.next();
-    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-    $content.slideToggle(500, function () {
-        //execute this after slideToggle is done
-        //change text of header based on visibility of content div
-        $h1.text(function () {
-            //change text based on condition
-            return $content.is(":visible") ? "Collapse" : "Expand";
-        });
-    });
+    // this is where the popping out effect happens
+    $(this).animate({ height: "200", width: "200", left: "-=55", top: "-=55" }, "fast");
 
+}, function() {
+    $(this).closest(".div").css("z-index", 0);
+    $(this).animate({ height: "90", width: "90", left: "+=55", top: "+=55" }, "fast");
+});​
 });
 </script>
 </body>
