@@ -223,10 +223,26 @@ background-size: cover;
    
 </head>
 <body>
-    
-         
+    <script>
+         $(function(){
+        $('.slide-out-div').tabSlideOut({
+            tabHandle: '.handle',                     //class of the element that will become your tab
+            pathToTabImage: 'http://www.massee-org.eu/images/contact.jpg', //path to the image for the tab //Optionally can be set using css
+            imageHeight: '300px',                     //height of tab image           //Optionally can be set using css
+            imageWidth: '400px',                       //width of tab image            //Optionally can be set using css
+            tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
+            speed: 300,                               //speed of animation
+            action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+            topPos: '200px',                          //position from the top/ use if tabLocation is left or right
+            leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+            fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
+        });
 
-        
+    });
+
+         </script>
+
+         
         <ul class="accordian">
             <li>
                 <div class="accHeader">
@@ -527,24 +543,6 @@ $(window).scroll(function() {
  
   </div>
 </div>
-<script>
-         $(function(){
-        $('.slide-out-div').tabSlideOut({
-            tabHandle: '.handle',                     //class of the element that will become your tab
-            pathToTabImage: 'http://www.massee-org.eu/images/contact.jpg', //path to the image for the tab //Optionally can be set using css
-            imageHeight: '300px',                     //height of tab image           //Optionally can be set using css
-            imageWidth: '400px',                       //width of tab image            //Optionally can be set using css
-            tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
-            speed: 300,                               //speed of animation
-            action: 'click',                          //options: 'click' or 'hover', action to trigger animation
-            topPos: '200px',                          //position from the top/ use if tabLocation is left or right
-            leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
-            fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
-        });
-
-    });
-
-         </script>
 
 <div class="slide-out-div open" style="line-height: 1; position: absolute; height: 194px; top: 200px; left: -3px;">
             <a class="handle" href="http://link-for-non-js-users.html" style="width: 400px; height: 300px; display: block; text-indent: -99999px; outline: none; position: absolute; top: 0px; right: -400px; background: url(http://www.massee-org.eu/images/contact.jpg) no-repeat;">Content</a>
